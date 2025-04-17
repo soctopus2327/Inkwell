@@ -10,6 +10,7 @@ export default function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/reader" element={<ReaderDashboard />} />
       <Route path="/writer" element={<WriterDashboard />} />
+      <Route path="/guest" element={<ReaderDashboard />} />
     </Routes>
   );
 }
