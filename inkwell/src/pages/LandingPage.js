@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Card } from "../components/ui/card";
 import { motion } from "framer-motion";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
@@ -96,38 +96,4 @@ export default function LandingPage() {
       </section>
     </div>
   );
-}
-
-      {/* Features Section */}
-      <section className="py-20 px-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {/* Tinder for Papers */}
-            <Card className="p-8 text-center bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all">
-              <div className="text-4xl mb-4">📖</div>
-              <h3 className="text-xl font-bold mb-4 dark:text-white">Tinder for Papers</h3>
-              <p className="text-gray-600 dark:text-gray-300">Swipe to explore and save papers that match your research interests</p>
-            </Card>
-
-            {/* Chat with Paper */}
-            <Card className="p-8 text-center bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all">
-              <div className="text-4xl mb-4">💬</div>
-              <h3 className="text-xl font-bold mb-4 dark:text-white">Chat with the Paper</h3>
-              <p className="text-gray-600 dark:text-gray-300">Ask questions and get instant answers from your research papers</p>
-            </Card>
-
-            {/* Research Quizzes */}
-            <Card className="p-8 text-center bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all">
-              <div className="text-4xl mb-4">🧠</div>
-              <h3 className="text-xl font-bold mb-4 dark:text-white">Research Quizzes</h3>
-              <p className="text-gray-600 dark:text-gray-300">Build your knowledge with interactive quizzes and memory boosters</p>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
 }
